@@ -11,7 +11,6 @@ session_start();
 define('base',dirname(__DIR__).'/htdocs');
 define('base_url',getenv('HTTP_HOST').'/');
 define('path_config',base.'/app/config.php');
-
 include base.'/app/functions.php';
 
 // route
@@ -47,7 +46,7 @@ $assets = "//".base_url.$folder;
 include path_config;
 //var_dump(base."/".$folder.'/'.$page);
 if (file_exists(base."/".$folder.'/'.$page)){
-    require_once base."/".$folder.'/'.$page;
+        require_once base."/".$folder.'/'.$page;
 }else{
     http_response_code(404);
     include "404.php";

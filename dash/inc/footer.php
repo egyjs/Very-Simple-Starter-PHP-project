@@ -9,7 +9,7 @@
 
 
 <!-- Sticky Footer -->
-<footer class="sticky-footer <?= ($pageOption['sidebar'] == false) ? 'w-100':"" ?>">
+<footer class="sticky-footer <?= (@$pageOption['sidebar'] == false) ? 'w-100':"" ?>">
     <div class="container my-auto">
         <div class="copyright text-center my-auto">
             <span>Copyright © Your Website 2018</span>
@@ -48,8 +48,8 @@
 </div>
 
 <!-- Bootstrap core JavaScript-->
-<script src="<?= $assets ?>/vendor/jquery/jquery.min.js"></script>
-<script src="<?= $assets ?>/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="<?= $assets ?>/../vendor/jquery/jquery.min.js"></script>
+<script src="<?= $assets ?>/../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 <!-- Core plugin JavaScript-->
 <script src="<?= $assets ?>/../vendor/jquery-easing/jquery.easing.min.js"></script>

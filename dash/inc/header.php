@@ -27,9 +27,9 @@
 
 </head>
 
-<body class="<?= $pageOption['bgcolor'] ?>" id="page-top">
+<body class="<?= @$pageOption['bgcolor'] ?>" id="page-top">
 
-<nav class="navbar navbar-expand navbar-dark bg-dark static-top  <?= ($pageOption['auth'] == true) ? 'd-none':"" ?>">
+<nav class="navbar navbar-expand navbar-dark bg-dark static-top  <?= (@$pageOption['auth'] == true) ? 'd-none':"" ?>">
 
     <a class="navbar-brand mr-1" href="index.html">Start Bootstrap</a>
 

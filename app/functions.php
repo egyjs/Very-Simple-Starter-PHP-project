@@ -6,6 +6,8 @@
  * Time: 4:27 PM
  */
 
+
+
 /**
  * Checks if a folder exist and return canonicalized absolute pathname (sort version)
  * @param string $folder the path being checked.
